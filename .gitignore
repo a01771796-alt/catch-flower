@@ -1,0 +1,20 @@
+# Dependencias (por si se agrega tooling más adelante)
+node_modules/
+
+# Variables de entorno / secretos
+.env
+.env.*
+
+# Cloudflare Pages / Workers
+.wrangler/
+.dev.vars
+
+# Logs
+*.log
+npm-debug.log*
+
+# Sistema operativo / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
