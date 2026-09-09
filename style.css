@@ -639,9 +639,21 @@ section { padding: var(--space-xl) 0; }
   }
 }
 
+@media (max-width: 480px) {
+  /* El botón de WhatsApp del header y el hamburguesa no caben junto al
+     nombre de la marca en pantallas angostas — se quita el botón de texto
+     aquí y se deja el botón flotante de WhatsApp como acceso rápido. */
+  .header-actions .btn-primary { display: none; }
+}
+
 @media (max-width: 390px) {
   .container { padding: 0 var(--space-sm); }
+  .brand-name { font-size: 1.1rem; }
   .hero-content h1 { font-size: 2.1rem; }
+  .hero-actions { flex-direction: column; align-items: stretch; }
+  .hero-actions .btn { justify-content: center; }
   .about-facts { grid-template-columns: 1fr; }
   .catalog-grid { grid-template-columns: 1fr; }
+  .whatsapp-float { width: 50px; height: 50px; bottom: 1rem; right: 1rem; }
+  .whatsapp-float svg { width: 24px; height: 24px; }
 }
