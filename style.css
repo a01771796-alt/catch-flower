@@ -657,3 +657,9 @@ section { padding: var(--space-xl) 0; }
   .whatsapp-float { width: 50px; height: 50px; bottom: 1rem; right: 1rem; }
   .whatsapp-float svg { width: 24px; height: 24px; }
 }
+
+/* Crédito de Nucleo: obligatorio en todo sitio (demo o vendido); solo se quita si Luis lo indica para ese cliente. */
+.footer-credito { font-size: 0.8rem; margin-top: 0.5rem; }
+.footer-credito a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+.footer-credito a:hover { opacity: 0.8; }
+.footer-bottom { padding-bottom: calc(58px + 1.5rem + 1rem); } /* libra el botón flotante de WhatsApp */
